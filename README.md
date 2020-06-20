@@ -4,5 +4,5 @@ A portfolio site built using React.
 
 Happy browsing.
 
-https://hayeskg.netlify.app/
+https://www.kristofhayes.me/
 
