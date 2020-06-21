@@ -4,5 +4,5 @@ A portfolio site built using React.
 
 Happy browsing.
 
-http://kristofhayes.me/
+https://www.kristofhayes.me/
 
