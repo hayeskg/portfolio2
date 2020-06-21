@@ -6,9 +6,13 @@ import GridListTile from '@material-ui/core/GridListTile';
 import GridListTileBar from '@material-ui/core/GridListTileBar';
 import { Link } from '@material-ui/core';
 
-import chargemyride from '../images/chargemyride.png';
-import chickentinder from '../images/chickentinder.png';
-import ncnews from '../images/ncnews.png';
+import chargemyridePic from '../images/chargemyride.png';
+import chickentinderPic from '../images/chickentinder.png';
+import ncnewsPic from '../images/ncnews.png';
+
+import chargemyrideText from '../descriptions/chargemyride.md';
+import chickentinderText from '../descriptions/chickentinder.md';
+import ncnewsText from '../descriptions/ncnews.md';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -36,19 +40,23 @@ const useStyles = makeStyles((theme) => ({
 
 const tiles = [
   {
-    img: chargemyride,
+    img: chargemyridePic,
     title: 'Charge My Ride',
     link: 'https://charge-my-ride.netlify.app/',
+    description: chargemyrideText
   },
   {
-    img: chickentinder,
+    img: chickentinderPic,
     title: 'Chicken Tinder',
     link: 'https://chicken-tinder-nc.netlify.app/',
+    desciption: chickentinderText
+
   },
   {
-    img: ncnews,
+    img: ncnewsPic,
     title: 'NC News',
     link: 'https://hayeskg-nc-news.netlify.app/',
+    description: ncnewsText
   }
 ];
 
@@ -69,7 +77,6 @@ const Projects = () => {
                 />
               </Link>
             </GridListTile>
-
           ))}
         </GridList>
       </div>

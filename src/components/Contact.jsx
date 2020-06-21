@@ -7,12 +7,11 @@ import email from '../images/email.png';
 const Contact = () => {
   return (
     <div >
-      <h1>Contact</h1>
-      <p>Get in touch to say hello and chat about technology.</p>
+      <h1>Let's chat</h1>
       <section className="contact-links">
         <div>
           <figure >
-            <a href="https://www.linkedin.com/in/kristof-hayes-6ba47692/">
+            <a href="https://www.linkedin.com/in/hayeskg/">
               <img src={linkedin} alt="LinkedIn logo" />
             </a>
           </figure>

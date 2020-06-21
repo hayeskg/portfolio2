@@ -17,8 +17,7 @@ const Interests = () => {
           <img src={machine} alt="a control system layout" />
         </figure>
         <p>
-          Industrial automation engineer used to interfacing different technologies
-          in varied environments.
+          Interfacing is the name of the game. Connect things, look at data, tell others about it.
             </p>
         <figure>
           <img src={iiot3} alt="industrial robot" />
@@ -30,8 +29,7 @@ const Interests = () => {
           <img src={cs3} alt="a graphic depicting Iot" />
         </figure>
         <p>
-          Currently on the Northcoders developer pathway where I am learning about full-stack
-          JavaScript web development.
+          Builing prototypes quickly, in diverse, self-organising teams. Staying engaged with evolving solutions.
             </p>
         <figure>
           <img src={nc2} alt="northcoders logo" />
@@ -43,7 +41,7 @@ const Interests = () => {
           <img src={eco4} alt="sustainable graphic" />
         </figure>
         <p>
-          Solving problems around automation and sustainability. Technology can be a part of the solution.
+          Solving problems on the convergence of technology and sustainability. Future business models.
             </p>
         <figure>
           <img src={loop2} alt="feedback loop" />
