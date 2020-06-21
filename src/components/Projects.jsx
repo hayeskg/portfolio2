@@ -1,56 +1,84 @@
 import React from 'react';
-import machine from '../images/machine.png';
-import iiot3 from '../images/iiot3.png';
-import cs3 from '../images/cs3.png';
-import nc2 from '../images/nc2.png';
-import eco4 from '../images/eco4.png';
-import loop2 from '../images/loop2.png';
 
+import { makeStyles } from '@material-ui/core/styles';
+import GridList from '@material-ui/core/GridList';
+import GridListTile from '@material-ui/core/GridListTile';
+import GridListTileBar from '@material-ui/core/GridListTileBar';
+import { Link } from '@material-ui/core';
+
+import chargemyride from '../images/chargemyride.png';
+import chickentinder from '../images/chickentinder.png';
+import ncnews from '../images/ncnews.png';
+
+
+const useStyles = makeStyles((theme) => ({
+  root: {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    overflow: 'auto',
+    backgroundColor: ' #fae7c9',
+  },
+  gridList: {
+    width: 800,
+    height: 600,
+    justifyContent: 'center'
+  },
+  gridListTile: {
+    width: 'auto',
+    height: 600
+  },
+  img: {
+    width: 800,
+    height: 600,
+  }
+}));
+
+const tiles = [
+  {
+    img: chargemyride,
+    title: 'Charge My Ride',
+    link: 'https://charge-my-ride.netlify.app/',
+  },
+  {
+    img: chickentinder,
+    title: 'Chicken Tinder',
+    link: 'https://chicken-tinder-nc.netlify.app/',
+  },
+  {
+    img: ncnews,
+    title: 'NC News',
+    link: 'https://hayeskg-nc-news.netlify.app/',
+  }
+];
 
 const Projects = () => {
+  const classes = useStyles();
   return (
+    <>
+      <h2 class="header1">Apps I've built.</h2>
+      <div className={classes.root}>
+        <GridList cellHeight={300} className={classes.gridList}>
+          {tiles.map((tile) => (
+            <GridListTile key={tile.img}>
+              <img src={tile.img} alt={tile.title} />
+              <Link href={tile.link} >
+                <GridListTileBar
+                  title={tile.title}
+                  subtitle={<span>{tile.link}</span>}
+                />
+              </Link>
+            </GridListTile>
 
-    <section class="interests">
-      <div>
-        <h1 class="header1">IoT and Automation</h1>
-        <figure>
-          <img src={machine} alt="a control system layout" />
-        </figure>
-        <p>
-          Industrial automation engineer used to interfacing different technologies
-          in varied environments.
-            </p>
-        <figure>
-          <img src={iiot3} alt="industrial robot" />
-        </figure>
+          ))}
+        </GridList>
       </div>
-      <div>
-        <h1 class="header1">Software Development</h1>
-        <figure>
-          <img src={cs3} alt="a graphic depicting Iot" />
-        </figure>
-        <p>
-          Currently on the Northcoders developer pathway where I am learning about full-stack
-          JavaScript web development.
-            </p>
-        <figure>
-          <img src={nc2} alt="northcoders logo" />
-        </figure>
-      </div>
-      <div>
-        <h1 class="header1">Sustainability</h1>
-        <figure>
-          <img src={eco4} alt="sustainable graphic" />
-        </figure>
-        <p>
-          Solving problems around automation and sustainability. Technology can be a part of the solution.
-            </p>
-        <figure>
-          <img src={loop2} alt="feedback loop" />
-        </figure>
-      </div>
-    </section>
+    </>
   );
 };
 
 export default Projects;
+
+
+
+
