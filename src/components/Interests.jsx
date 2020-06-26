@@ -1,10 +1,13 @@
 import React from 'react';
+
 import machine from '../images/machine.png';
 import iiot3 from '../images/iiot3.png';
 import cs3 from '../images/cs3.png';
 import nc2 from '../images/nc2.png';
 import eco4 from '../images/eco4.png';
 import loop2 from '../images/loop2.png';
+
+import Tech from './Tech'
 
 
 const Interests = () => {
@@ -17,11 +20,12 @@ const Interests = () => {
           <img src={machine} alt="a control system layout" />
         </figure>
         <p>
-          Interfacing is the name of the game. Connect things, look at data, tell others about it.
+          Interfacing is the name of the game. Connect things, observe data, tell others about it.
             </p>
         <figure>
           <img src={iiot3} alt="industrial robot" />
         </figure>
+        <Tech />
       </div>
       <div>
         <h1 class="header1">Software Development</h1>
@@ -34,6 +38,7 @@ const Interests = () => {
         <figure>
           <img src={nc2} alt="northcoders logo" />
         </figure>
+        <Tech />
       </div>
       <div>
         <h1 class="header1">Sustainability</h1>
@@ -46,6 +51,7 @@ const Interests = () => {
         <figure>
           <img src={loop2} alt="feedback loop" />
         </figure>
+        <Tech />
       </div>
     </section>
   );

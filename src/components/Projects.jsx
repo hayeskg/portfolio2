@@ -64,7 +64,7 @@ const Projects = () => {
   const classes = useStyles();
   return (
     <>
-      <h2 class="header1">Apps I've built.</h2>
+      <h2 class="header1">Apps I've helped develop.</h2>
       <div className={classes.root}>
         <GridList cellHeight={300} className={classes.gridList}>
           {tiles.map((tile) => (
