@@ -41,7 +41,7 @@ const Interests = () => {
           <img src={eco4} alt="sustainable graphic" />
         </figure>
         <p>
-          Solving problems on the convergence of technology and sustainability. Future business models.
+          Solving problems where technology and sustainability meet. Future business models.
             </p>
         <figure>
           <img src={loop2} alt="feedback loop" />
