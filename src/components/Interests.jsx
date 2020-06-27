@@ -7,7 +7,53 @@ import nc2 from '../images/nc2.png';
 import eco4 from '../images/eco4.png';
 import loop2 from '../images/loop2.png';
 
-import Tech from './Tech'
+import { Chip } from '@material-ui/core';
+
+const tech = [{
+  labels: [
+    'CoDeSys',
+    'C# .NET',
+    'Networking',
+    'Edge computing',
+    'SCADA',
+    'iIOT',
+    'MQTT',
+    'iVPN'
+  ]
+},
+{
+  labels: [
+    'Node.js',
+    'React',
+    'Material-UI',
+    'D3.js',
+    'Express',
+    'PSQL',
+    'MongoDB',
+    'REST API',
+    'GraphQL',
+    'Apollo',
+    'FireAuth',
+    'Jest',
+    'TDD',
+    'Git'
+  ]
+},
+{
+
+  labels: [
+    'Agile',
+    'Lean',
+    'Remote',
+    'Local',
+    'Organic',
+    'Low Impact',
+    'Social',
+    'Learning'
+  ]
+}
+
+]
 
 
 const Interests = () => {
@@ -25,7 +71,11 @@ const Interests = () => {
         <figure>
           <img src={iiot3} alt="industrial robot" />
         </figure>
-        <Tech />
+        <h3>Tech stack:</h3>
+        {tech[0].labels.map((label) => {
+          return <Chip label={label} />
+        })}
+
       </div>
       <div>
         <h1 class="header1">Software Development</h1>
@@ -38,7 +88,10 @@ const Interests = () => {
         <figure>
           <img src={nc2} alt="northcoders logo" />
         </figure>
-        <Tech />
+        <h3>Tech stack:</h3>
+        {tech[1].labels.map((label) => {
+          return <Chip label={label} />
+        })}
       </div>
       <div>
         <h1 class="header1">Sustainability</h1>
@@ -51,7 +104,10 @@ const Interests = () => {
         <figure>
           <img src={loop2} alt="feedback loop" />
         </figure>
-        <Tech />
+        <h3>Tech stack:</h3>
+        {tech[2].labels.map((label) => {
+          return <Chip label={label} />
+        })}
       </div>
     </section>
   );
