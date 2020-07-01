@@ -8,6 +8,20 @@ import eco4 from '../images/eco4.png';
 import loop2 from '../images/loop2.png';
 
 import { Chip } from '@material-ui/core';
+import { createMuiTheme } from '@material-ui/core/styles';
+import purple from '@material-ui/core/colors/purple';
+import green from '@material-ui/core/colors/green';
+
+const theme = createMuiTheme({
+  palette: {
+    primary: {
+      main: purple[500],
+    },
+    secondary: {
+      main: green[500],
+    },
+  },
+});
 
 const tech = [{
   labels: [
@@ -72,10 +86,11 @@ const Interests = () => {
           <img src={iiot3} alt="industrial robot" />
         </figure>
         <h3>Tech stack:</h3>
-        {tech[0].labels.map((label) => {
-          return <Chip label={label} />
-        })}
-
+        <div class='techstack'>
+          {tech[0].labels.map((label) => {
+            return <Chip label={label} variant="outlined" />
+          })}
+        </div>
       </div>
       <div>
         <h1 class="header1">Software Development</h1>
@@ -89,9 +104,11 @@ const Interests = () => {
           <img src={nc2} alt="northcoders logo" />
         </figure>
         <h3>Tech stack:</h3>
-        {tech[1].labels.map((label) => {
-          return <Chip label={label} />
-        })}
+        <div class='techstack'>
+          {tech[1].labels.map((label) => {
+            return <Chip label={label} variant="outlined" />
+          })}
+        </div>
       </div>
       <div>
         <h1 class="header1">Sustainability</h1>
@@ -104,10 +121,12 @@ const Interests = () => {
         <figure>
           <img src={loop2} alt="feedback loop" />
         </figure>
-        <h3>Tech stack:</h3>
-        {tech[2].labels.map((label) => {
-          return <Chip label={label} />
-        })}
+        <h3>Skills stack:</h3>
+        <div class='techstack'>
+          {tech[2].labels.map((label) => {
+            return <Chip label={label} variant="outlined" />
+          })}
+        </div>
       </div>
     </section>
   );

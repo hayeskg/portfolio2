@@ -102,5 +102,11 @@ footer {
   font-size: small;
 }
 
+.techstack {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100px;
+}
+
 
 
