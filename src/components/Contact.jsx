@@ -7,7 +7,7 @@ import email from '../images/email.png';
 const Contact = () => {
   return (
     <div >
-      <h1>Let's chat</h1>
+      <h1>Say hello</h1>
       <section className="contact-links">
         <div>
           <figure >

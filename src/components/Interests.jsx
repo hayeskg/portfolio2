@@ -17,7 +17,7 @@ const Interests = () => {
           <img src={machine} alt="a control system layout" />
         </figure>
         <p>
-          Interfacing is the name of the game. Connect things, look at data, tell others about it.
+          Controlling processes. Connecting things. Capturing data.
             </p>
         <figure>
           <img src={iiot3} alt="industrial robot" />
@@ -29,8 +29,8 @@ const Interests = () => {
           <img src={cs3} alt="a graphic depicting Iot" />
         </figure>
         <p>
-          Builing prototypes quickly, in diverse, self-organising teams. Staying engaged with evolving solutions.
-            </p>
+          Using the best tools to build rapid prototypes. Scale to demonstrate value.
+        </p>
         <figure>
           <img src={nc2} alt="northcoders logo" />
         </figure>
@@ -41,7 +41,7 @@ const Interests = () => {
           <img src={eco4} alt="sustainable graphic" />
         </figure>
         <p>
-          Solving problems where technology and sustainability meet. Future business models.
+          Solving problems where technology and sustainability overlap. Future business models.
             </p>
         <figure>
           <img src={loop2} alt="feedback loop" />

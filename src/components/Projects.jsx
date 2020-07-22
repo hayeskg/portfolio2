@@ -6,16 +6,10 @@ import GridListTile from '@material-ui/core/GridListTile';
 import GridListTileBar from '@material-ui/core/GridListTileBar';
 import { Link } from '@material-ui/core';
 
-import onTapMenu from '../images/ontap-menu.png'
+import tapInn from '../images/tapinn.png'
 import chargemyridePic from '../images/chargemyride.png';
 import chickentinderPic from '../images/chickentinder.png';
 import ncnewsPic from '../images/ncnews.png';
-
-import onTapText from '../descriptions/ontap.md';
-import chargemyrideText from '../descriptions/chargemyride.md';
-import chickentinderText from '../descriptions/chickentinder.md';
-import ncnewsText from '../descriptions/ncnews.md';
-
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -42,29 +36,29 @@ const useStyles = makeStyles((theme) => ({
 
 const tiles = [
   {
-    img: onTapMenu,
-    title: 'onTap',
-    link: 'https://github.com/onTapTeam',
-    description: onTapText
+    img: tapInn,
+    title: 'TapInn',
+    link: 'https://tapinn.co.uk',
+    description: 'Helping venues stay open with a table service web app'
   },
   {
     img: chargemyridePic,
-    title: 'Charge My Ride',
+    title: 'Charge my ride',
     link: 'https://charge-my-ride.netlify.app/',
-    description: chargemyrideText
+    description: 'Global EV charger chart'
   },
   {
     img: chickentinderPic,
     title: 'Chicken Tinder',
     link: 'https://chicken-tinder-nc.netlify.app/',
-    description: chickentinderText
+    description: 'Connecting restaurants with group bookings'
 
   },
   {
     img: ncnewsPic,
     title: 'NC News',
     link: 'https://hayeskg-nc-news.netlify.app/',
-    description: ncnewsText
+    description: 'Community messaging and content platform'
   }
 ];
 
@@ -72,7 +66,7 @@ const Projects = () => {
   const classes = useStyles();
   return (
     <>
-      <h2 class="header1">Apps I've helped build.</h2>
+      <h2 class="header1">Projects I'm working on</h2>
       <div className={classes.root}>
         <GridList cellHeight={300} className={classes.gridList}>
           {tiles.map((tile) => (
@@ -81,7 +75,8 @@ const Projects = () => {
               <Link href={tile.link} >
                 <GridListTileBar
                   title={tile.title}
-                  subtitle={<span>{tile.link}</span>}
+                  // subtitle={<span>{tile.link}</span>}
+                  subtitle={<span>{tile.description}</span>}
                 />
               </Link>
             </GridListTile>
