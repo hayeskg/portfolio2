@@ -10,6 +10,10 @@ import tapInn from '../images/tapinn.png'
 import chargemyridePic from '../images/chargemyride.png';
 import chickentinderPic from '../images/chickentinder.png';
 import ncnewsPic from '../images/ncnews.png';
+import bikesafePic from '../images/bikesafe.png';
+import rozagyurtaPic from '../images/rozagyurta.png';
+import listtioPic from '../images/listtio.png';
+import enanoPic from '../images/enano.png'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -22,7 +26,7 @@ const useStyles = makeStyles((theme) => ({
   gridList: {
     width: 800,
     height: 600,
-    justifyContent: 'center'
+    justifyContent: 'center',
   },
   gridListTile: {
     width: 'auto',
@@ -36,10 +40,34 @@ const useStyles = makeStyles((theme) => ({
 
 const tiles = [
   {
+    img: enanoPic,
+    title: 'E Nano',
+    link: 'https://e-nano.io/',
+    description: 'Robotics for agriculture'
+  },
+  {
+    img: listtioPic,
+    title: 'listt.io',
+    link: 'https://listt.io/',
+    description: 'Platform and blog for sustainable technology'
+  },
+  {
+    img: rozagyurtaPic,
+    title: 'rozagyurta',
+    link: 'https://rozagyurta.netlify.app/',
+    description: 'Accessories and fashion'
+  },
+  {
     img: tapInn,
     title: 'TapInn',
-    link: 'https://tapinn.co.uk',
+    link: 'https://tapinn.co.uk/',
     description: 'Helping venues stay open with a table service web app'
+  },
+  {
+    img: bikesafePic,
+    title: 'Bike Safe',
+    link: 'https://bikesafe.netlify.app/',
+    description: 'Cycle indcident database'
   },
   {
     img: chargemyridePic,
@@ -71,7 +99,7 @@ const Projects = () => {
         <GridList cellHeight={300} className={classes.gridList}>
           {tiles.map((tile) => (
             <GridListTile key={tile.img}>
-              <img src={tile.img} alt={tile.title} />
+              <img src={tile.img} alt={tile.title} className='projectsPics' />
               <Link href={tile.link} >
                 <GridListTileBar
                   title={tile.title}
