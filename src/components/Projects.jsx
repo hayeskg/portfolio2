@@ -35,7 +35,7 @@ const useStyles = makeStyles((theme) => ({
   },
   img: {
     width: 800,
-    height: 600,
+    height: 600
   }
 }));
 
@@ -104,16 +104,17 @@ const Projects = () => {
       <h2 class="header1">Projects I'm working on</h2>
       <div className={classes.root}>
         <GridList cellHeight={300} className={classes.gridList}>
+          
           {tiles.map((tile) => (
             <GridListTile key={tile.img}>
-              <img src={tile.img} alt={tile.title} className='projectsPics' />
-              <Link href={tile.link} >
-                <GridListTileBar
-                  title={tile.title}
-                  // subtitle={<span>{tile.link}</span>}
-                  subtitle={<span>{tile.description}</span>}
-                />
-              </Link>
+                <img src={tile.img} alt={tile.title} className='projectsPics' />
+                <Link href={tile.link} >
+                  <GridListTileBar
+                    title={tile.title}
+                    // subtitle={<span>{tile.link}</span>}
+                    subtitle={<span>{tile.description}</span>}
+                  />
+                </Link>
             </GridListTile>
           ))}
         </GridList>

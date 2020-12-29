@@ -4,11 +4,12 @@ import github from '../images/github.png';
 import soundcloud from '../images/soundcloud.png';
 import email from '../images/email.png';
 import medium from '../images/medium.png';
+import gitlab from '../images/gitlab.png';
 
 const Contact = () => {
   return (
     <div >
-      <h1>Say hello</h1>
+      <h1>You can find me here</h1>
       <section className="contact-links">
         <div>
           <figure >
@@ -26,6 +27,20 @@ const Contact = () => {
         </div>
         <div>
           <figure>
+            <a href="https://gitlab.com/kristof-e-nano">
+              <img src={gitlab} alt="GitLab logo" />
+            </a>
+          </figure>
+        </div>
+        <div>
+          <figure>
+            <a href="https://hayeskg.medium.com/">
+              <img src={medium} alt="medium logo" />
+            </a>
+          </figure>
+        </div>
+        <div>
+          <figure>
             <a href="https://soundcloud.com/hayeskg">
               <img src={soundcloud} alt="soundcloud logo" />
             </a>
@@ -35,13 +50,6 @@ const Contact = () => {
           <figure>
             <a href="mailto:kristof.g.hayes@gmail.com?Subject=Hello">
               <img src={email} alt="email logo" />
-            </a>
-          </figure>
-        </div>
-        <div>
-          <figure>
-            <a href="https://hayeskg.medium.com/">
-              <img src={medium} alt="medium logo" />
             </a>
           </figure>
         </div>
