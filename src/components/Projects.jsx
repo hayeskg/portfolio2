@@ -13,7 +13,8 @@ import ncnewsPic from '../images/ncnews.png';
 import bikesafePic from '../images/bikesafe.png';
 import rozagyurtaPic from '../images/rozagyurta.png';
 import listtioPic from '../images/listtio.png';
-import enanoPic from '../images/enano.png'
+import enanoPic from '../images/enano.png';
+import zsambokPic from '../images/zsambok.png';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -50,6 +51,12 @@ const tiles = [
     title: 'listt.io',
     link: 'https://listt.io/',
     description: 'Platform and blog for sustainable technology'
+  },
+  {
+    img: zsambokPic,
+    title: 'Zsambok Organic Farm',
+    link: 'https://en.zsambokibiokert.hu/cljaink',
+    description: 'Automating processes'
   },
   {
     img: rozagyurtaPic,
