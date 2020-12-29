@@ -3,6 +3,7 @@ import linkedin from '../images/linkedin.png';
 import github from '../images/github.png';
 import soundcloud from '../images/soundcloud.png';
 import email from '../images/email.png';
+import medium from '../images/medium.png';
 
 const Contact = () => {
   return (
@@ -34,6 +35,13 @@ const Contact = () => {
           <figure>
             <a href="mailto:kristof.g.hayes@gmail.com?Subject=Hello">
               <img src={email} alt="email logo" />
+            </a>
+          </figure>
+        </div>
+        <div>
+          <figure>
+            <a href="https://hayeskg.medium.com/">
+              <img src={medium} alt="medium logo" />
             </a>
           </figure>
         </div>
