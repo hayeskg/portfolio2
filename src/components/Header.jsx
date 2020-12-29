@@ -6,10 +6,10 @@ const Header = () => {
     <>
       <h1>Kristof Hayes</h1>
       <p>
-        Software engineer building technology solutions
+        Software engineer building sustainable technology solutions
         </p>
       <img class="profile-pic" src={me2} alt="me" />
-      <p>These are some of the things I like working on - take a look around</p>
+      <p>Some of the things I like working on - take a look around</p>
     </>
   );
 };

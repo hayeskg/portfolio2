@@ -17,7 +17,7 @@ const Interests = () => {
           <img src={machine} alt="a control system layout" />
         </figure>
         <p>
-          Controlling processes. Connecting things. Capturing data.
+          Connecting things. Building a data landscape. Improving processes. 
             </p>
         <figure>
           <img src={iiot3} alt="industrial robot" />
@@ -29,7 +29,7 @@ const Interests = () => {
           <img src={cs3} alt="a graphic depicting Iot" />
         </figure>
         <p>
-          Using the best tools to build rapid prototypes. Scale to demonstrate value.
+          Using the open source tools to build rapid prototypes. Scale to demonstrate value.
         </p>
         <figure>
           <img src={nc2} alt="northcoders logo" />
@@ -41,7 +41,7 @@ const Interests = () => {
           <img src={eco4} alt="sustainable graphic" />
         </figure>
         <p>
-          Solving problems where technology and sustainability overlap. Future business models.
+          Solving problems where technology and sustainability meet. Building impactful businesses.
             </p>
         <figure>
           <img src={loop2} alt="feedback loop" />
