@@ -99,3 +99,7 @@ footer {
     padding: 10px 20px;
     font-size: small;
 }
+
+footer a {
+    text-decoration: none;
+}
