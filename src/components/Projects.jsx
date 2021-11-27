@@ -42,15 +42,15 @@ const useStyles = makeStyles((theme) => ({
 const tiles = [
   {
     img: enanoPic,
-    title: 'E Nano',
+    title: 'E-Nano',
     link: 'https://e-nano.io/',
-    description: 'Robotics for agriculture'
+    description: 'Soil and crop health robotics'
   },
   {
     img: listtioPic,
     title: 'listt.io',
     link: 'https://listt.io/',
-    description: 'Platform and blog for sustainable technology'
+    description: 'circular solutions for regeneration'
   },
   {
     img: zsambokPic,
