@@ -5,6 +5,7 @@ import cs3 from '../images/cs3.png';
 import nc2 from '../images/nc2.png';
 import eco4 from '../images/eco4.png';
 import loop2 from '../images/loop2.png';
+import tool from '../images/tool.png';
 
 
 const Interests = () => {
@@ -32,7 +33,7 @@ const Interests = () => {
           Using open-source resources to build appropriate tech solutions. Start small, scale at pace.
         </p>
         <figure>
-          <img src={nc2} alt="northcoders logo" />
+          <img src={tool} alt="tool icon" />
         </figure>
       </div>
       <div>
