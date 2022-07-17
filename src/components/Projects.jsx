@@ -15,6 +15,8 @@ import rozagyurtaPic from '../images/rozagyurta.png';
 import listtioPic from '../images/listtio.png';
 import enanoPic from '../images/enano.png';
 import zsambokPic from '../images/zsambok.png';
+import ttcPic from "../images/ttc.png";
+import swbPic from "../images/swb.png"
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -41,16 +43,28 @@ const useStyles = makeStyles((theme) => ({
 
 const tiles = [
   {
+    img: listtioPic,
+    title: 'listt.io',
+    link: 'https://listt.io/',
+    description: 'Appropriate tech solutions for regeneration'
+  },
+  {
+    img: ttcPic,
+    title: 'The Tyre Collective',
+    link: 'https://www.thetyrecollective.com/',
+    description: 'Urban air pollution solutions'
+  },
+  {
+    img: swbPic,
+    title: 'Sowebuild',
+    link: 'https://www.sowebuild.com/',
+    description: 'Co-living, co-working app'
+  },
+  {
     img: enanoPic,
     title: 'E-Nano',
     link: 'https://e-nano.io/',
     description: 'Soil and crop health robotics'
-  },
-  {
-    img: listtioPic,
-    title: 'listt.io',
-    link: 'https://listt.io/',
-    description: 'circular solutions for regeneration'
   },
   {
     img: zsambokPic,
@@ -68,7 +82,7 @@ const tiles = [
     img: tapInn,
     title: 'TapInn',
     link: 'https://tapinn.co.uk/',
-    description: 'Helping venues stay open with a table service web app'
+    description: 'Real-time hospitality software'
   },
   {
     img: bikesafePic,
@@ -101,7 +115,7 @@ const Projects = () => {
   const classes = useStyles();
   return (
     <>
-      <h2 class="header1">Projects I'm working on</h2>
+      <h2 class="header1">What I work on</h2>
       <div className={classes.root}>
         <GridList cellHeight={300} className={classes.gridList}>
           
