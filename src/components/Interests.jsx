@@ -2,7 +2,6 @@ import React from 'react';
 import machine from '../images/machine.png';
 import iiot3 from '../images/iiot3.png';
 import cs3 from '../images/cs3.png';
-import nc2 from '../images/nc2.png';
 import eco4 from '../images/eco4.png';
 import loop2 from '../images/loop2.png';
 import tool from '../images/tool.png';
